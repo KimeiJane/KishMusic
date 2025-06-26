@@ -1,60 +1,122 @@
 # 🎶 KishMusic
 
-A single-page music application built with HTML, CSS, and JavaScript that uses json-server for data persistence.
+**Author:** Janet Kish
+
+## Description
+
+KishMusic is a modern, single-page music application that allows users to browse, search, and manage a collection of music tracks. Built with vanilla HTML, CSS, and JavaScript, it features a sleek dark/light theme toggle, real-time search functionality, genre filtering, and full CRUD operations powered by json-server.
 
 ## Features
 
-- **Search Functionality**: Search tracks by name or artist
-- **Genre Filtering**: Filter tracks by genre
-- **Dark/Light Theme Toggle**: Switch between dark and light modes
-- **Add New Tracks**: Add your own tracks to the collection
-- **Like Tracks**: Like your favorite tracks (persisted to database)
-- **Delete Tracks**: Remove tracks from the collection
+- 🔍 **Real-time Search** - Search tracks by name or artist
+- 🎭 **Genre Filtering** - Filter tracks by music genre
+- 🌙 **Theme Toggle** - Switch between dark and light modes
+- ➕ **Add Tracks** - Add new tracks to your collection
+- ❤️ **Like System** - Like your favorite tracks (persisted)
+- 🗑️ **Delete Tracks** - Remove tracks from collection
+- 📱 **Responsive Design** - Works on all device sizes
 
-## Requirements Met
+## Project Setup Instructions
 
-✅ **Single HTML file** - No redirects or reloads  
-✅ **Public API/db.json** - Uses json-server with local db.json  
-✅ **5+ objects with 3+ attributes** - Track objects with name, artist, genre, likes, etc.  
-✅ **Async JSON communication** - All API calls use fetch() with JSON  
-✅ **3 distinct event listeners**:
-- `input` event for search functionality
-- `change` event for genre filtering  
-- `click` event for theme toggle
-✅ **Array iteration** - Uses forEach, map, and filter methods  
-✅ **json-server integration** - Full CRUD operations  
+### Prerequisites
+- Node.js installed on your system
+- A modern web browser
 
-## Setup Instructions
+### Installation & Setup
 
-1. Install json-server globally:
+1. **Clone the repository:**
    ```bash
-   npm install -g json-server
+   git clone https://github.com/janet-kish/KishMusic.git
+   cd KishMusic
    ```
 
-2. Start the json-server:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the json-server:**
    ```bash
    npm start
-   # or
-   json-server --watch db.json --port 3000
    ```
+   This will start the API server on `http://localhost:3000`
 
-3. Open `index.html` in your browser
 
-4. The app will load tracks from the local database and allow full interaction
+
+### Alternative Setup Methods
+
+**Using the startup script:**
+```bash
+chmod +x start.sh
+./start.sh
+```
+
+**Manual json-server start:**
+```bash
+npx json-server --watch db.json --port 3000
+```
+
+## Live Demo
+
+🌐 **[View Live Site](https://janet-kish.github.io/KishMusic/)**
+
+*Note: The live demo uses a static version. For full functionality including add/edit/delete features, run locally with json-server.*
+
+## Technical Requirements Met
+
+✅ **Single HTML Page** - No redirects or page reloads  
+✅ **Public API Integration** - Uses json-server with local database  
+✅ **Async JSON Communication** - All API calls use fetch() with JSON  
+✅ **3+ Event Listeners** - input, change, click events  
+✅ **Array Iteration** - Uses forEach, map, filter methods  
+✅ **Form Validation** - Required fields with proper validation  
+✅ **Responsive Design** - Mobile-friendly layout  
+
+
 
 ## Usage
 
-- **Search**: Type in the search box to filter tracks by name or artist
-- **Filter**: Use the genre dropdown to filter by music genre
-- **Theme**: Click the theme toggle button to switch between dark/light modes
-- **Add Track**: Fill out the form at the bottom to add new tracks
-- **Like**: Click the heart button to like tracks (count persists)
-- **Delete**: Click the delete button to remove tracks
+1. **Browse Tracks** - View the collection of music tracks with thumbnails
+2. **Search** - Type in the search box to filter by track name or artist
+3. **Filter by Genre** - Use the dropdown to filter tracks by genre
+4. **Toggle Theme** - Click the theme button to switch between dark/light modes
+5. **Add New Track** - Fill out the form to add tracks to your collection
+6. **Like Tracks** - Click the heart button to like tracks
+7. **Delete Tracks** - Click the delete button to remove tracks
 
-## Technical Details
+## Technologies Used
 
-- **Frontend**: Vanilla HTML, CSS, JavaScript
-- **Backend**: json-server for REST API
-- **Data**: Local db.json file with track collection
-- **Styling**: Responsive design with CSS Grid and Flexbox
-- **Interactions**: Event-driven with proper async/await patterns
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Backend:** json-server (REST API)
+- **Styling:** CSS Grid, Flexbox, CSS Variables
+- **Data:** JSON format with local persistence
+
+## Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+
+## Copyright and License
+
+© 2024 Janet Kish. All rights reserved.
+
+This project is licensed under the MIT License - see below for details:
+
+MIT License
+
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Contact
+
+Janet Kish - [GitHub Profile](https://github.com/janet-kish)
+
+Project Link: [https://github.com/janet-kish/KishMusic](https://github.com/janet-kish/KishMusic)
