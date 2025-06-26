@@ -1,0 +1,17 @@
+{
+  "name": "kishmusic",
+  "version": "1.0.0",
+  "description": "A modern single-page music application",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx json-server --watch db.json --port 3000",
+    "dev": "npx json-server --watch db.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["music", "javascript", "spa", "json-server"],
+  "author": "Janet Kish",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
