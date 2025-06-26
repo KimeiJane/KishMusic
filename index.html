@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎶 KishMusic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎶 KishMusic</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search tracks..." />
+    <select id="genreFilter">
+      <option value="">All Genres</option>
+    </select>
+  </div>
+  
+  <section id="track-list"></section>
+
+  <form id="trackForm">
+    <h2>Add New Track</h2>
+    <input type="text" id="trackName" placeholder="Track Name" required />
+    <input type="text" id="trackArtist" placeholder="Artist" required />
+    <input type="text" id="trackGenre" placeholder="Genre" required />
+    <button type="submit">Add Track</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
