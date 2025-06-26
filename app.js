@@ -42,7 +42,6 @@ themeToggle.addEventListener('click', () => {
 });
 
 function setupEventListeners() {
-  // Form submission
   trackForm.addEventListener('submit', handleAddTrack);
 }
 
@@ -82,7 +81,6 @@ function renderTracks(tracks) {
       </div>
     `;
     
-    // Add event listeners for like and delete buttons
     const likeBtn = card.querySelector('.like-btn');
     const deleteBtn = card.querySelector('.delete-btn');
     
