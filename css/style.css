@@ -184,6 +184,17 @@ body.light-mode #trackForm {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+#trackForm label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #00fff7;
+}
+
+body.light-mode #trackForm label {
+  color: #007acc;
+}
+
 #trackForm input {
   width: 100%;
   margin-bottom: 1em;
