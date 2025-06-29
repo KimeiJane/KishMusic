@@ -1,6 +1,6 @@
 # 🎶 KishMusic
 
-**Author:** Janet Kish
+**Author:** Jane Kimei
 
 ## Description
 

@@ -23,9 +23,12 @@
 
   <form id="trackForm">
     <h2>Add New Track</h2>
-    <input type="text" id="trackName" placeholder="Track Name" required />
-    <input type="text" id="trackArtist" placeholder="Artist" required />
-    <input type="text" id="trackGenre" placeholder="Genre" required />
+    <label for="trackName">Track Name *</label>
+    <input type="text" id="trackName" placeholder="Enter track name" required minlength="2" />
+    <label for="trackArtist">Artist *</label>
+    <input type="text" id="trackArtist" placeholder="Enter artist name" required minlength="2" />
+    <label for="trackGenre">Genre *</label>
+    <input type="text" id="trackGenre" placeholder="Enter genre" required minlength="2" />
     <button type="submit">Add Track</button>
   </form>
 
